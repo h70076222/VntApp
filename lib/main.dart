@@ -397,7 +397,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
             Navigator.of(context).pop();
           }
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('VNT服务停止[$configName]')),
+            SnackBar(content: Text('组网服务停止[$configName]')),
           );
         }
       } else if (msg is RustErrorInfo) {
@@ -636,7 +636,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Tooltip(
-                    message: 'VNT网络',
+                    message: '组网网络',
                     child: ColorChangingButton(
                       icon: Icons.attractions,
                       colors: const [Colors.white, Colors.yellow],
