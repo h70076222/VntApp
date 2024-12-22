@@ -645,7 +645,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Tooltip(
-                  message: '关于VNT',
+                  message: '关于HXSDWAN',
                   child: IconButton(
                     icon: const Icon(Icons.info, color: Colors.white),
                     onPressed: _navigateToAboutPage,
