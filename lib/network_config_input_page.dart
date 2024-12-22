@@ -317,7 +317,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                 CustomTooltipTextField(
                   controller: _virtualIPv4Controller,
                   labelText: '虚拟IPv4',
-                  tooltipMessage: '(不输入则由VNTS分配虚拟IPv4)',
+                  tooltipMessage: '(不输入则由服务器分配虚拟IPv4)',
                   maxLength: 15,
                   validator: (value) {
                     final regex = RegExp(
@@ -335,7 +335,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                 CustomTooltipTextField(
                   controller: _serverAddressController,
                   labelText: '服务器地址',
-                  tooltipMessage: '(VNTS地址,udp和tcp模式可以使用txt:前缀启用TXT记录解析)',
+                  tooltipMessage: '(服务器地址,udp和tcp模式可以使用txt:前缀启用TXT记录解析)',
                   maxLength: 64,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
