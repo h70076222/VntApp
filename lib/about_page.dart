@@ -32,7 +32,7 @@ class AboutPage extends StatelessWidget {
                 children: [
                   const Flexible(
                     child: SelectableText(
-                      "开放所有源代码 http://hon2233768.free3v.vip",
+                      "开放所有源代码 联系电话 13542233768 微信同号",
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.center,
                     ),
