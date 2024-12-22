@@ -32,14 +32,14 @@ class AboutPage extends StatelessWidget {
                 children: [
                   const Flexible(
                     child: SelectableText(
-                      "开放所有源代码 https://github.com/lbl8603/vnt",
+                      "开放所有源代码 http://hon2233768.free3v.vip",
                       style: TextStyle(fontSize: 16),
                       textAlign: TextAlign.center,
                     ),
                   ),
                   TextButton(
                     onPressed: () {
-                      launchUrl(Uri.parse('https://github.com/lbl8603/vnt'));
+                      launchUrl(Uri.parse('http://hon2233768.free3v.vip'));
                     },
                     child: const Text('点击跳转'),
                   ),
