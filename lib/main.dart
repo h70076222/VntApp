@@ -75,8 +75,8 @@ Future<void> initSystemTray() async {
       Platform.isWindows ? 'assets/app_icon.ico' : 'assets/app_icon.png';
 
   await systemTray.initSystemTray(
-    title: "VNT",
-    toolTip: "VNT",
+    title: "HXSDWAN",
+    toolTip: "HXSDWAN",
     iconPath: path,
   );
   final Menu menu = Menu();
