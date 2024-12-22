@@ -5,7 +5,7 @@
     <application
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher"
-        android:label="VNT">
+        android:label="HXSDWAN">
         <service
             android:name=".vpn.MyVpnService"
             android:exported="true"
