@@ -317,7 +317,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                 CustomTooltipTextField(
                   controller: _virtualIPv4Controller,
                   labelText: '虚拟IPv4',
-                  tooltipMessage: '(不输入则由服务器分配虚拟IPv4)',
+                  tooltipMessage: '(如10.26.0.X 不输入则由服务器分配虚拟IPv4)',
                   maxLength: 15,
                   validator: (value) {
                     final regex = RegExp(
@@ -449,16 +449,16 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                       });
                     },
                   ),
-                _buildSectionTitle('子网代理&端口映射'),
+                _buildSectionTitle('组网路由IP,虚拟IP'),
                 _buildDynamicTooltipFields(
-                  'in-ip',
+                  '入口路由-ip',
                   _inIps,
                   '示例：192.168.0.1/24,10.26.0.10',
                   34,
                   IpUtils.parseInIpString,
                 ),
                 _buildDynamicTooltipFields(
-                  'out-ip',
+                  '岀口手机-ip',
                   _outIps,
                   '示例：0.0.0.0/0',
                   18,
