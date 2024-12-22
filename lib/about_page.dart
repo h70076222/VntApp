@@ -22,7 +22,7 @@ class AboutPage extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               const Text(
-                '这是一个简单高效的组网工具，可以非常方便的进行组网、点对点、点对网通信。',
+                '这是宏兴科技组网工具，可以非常方便的进行组网、点对点、点对网通信。',
                 style: TextStyle(fontSize: 16),
                 textAlign: TextAlign.center,
               ),
