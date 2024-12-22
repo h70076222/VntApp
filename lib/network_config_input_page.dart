@@ -293,12 +293,12 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                 _buildSectionTitle('基本参数'),
                 CustomTooltipTextField(
                   controller: _groupNumberController,
-                  labelText: '组网编号',
-                  tooltipMessage: '(标识同一个虚拟网络)',
+                  labelText: '组网识别码',
+                  tooltipMessage: '(识别同一个虚拟网络)',
                   maxLength: 64,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return '请输入组网编号';
+                      return '请输入组网识别码';
                     }
                     return null;
                   },
