@@ -98,7 +98,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
   void _loadConfig(NetworkConfig config) {
     _nameController.text = config.configName;
     _groupNumberController.text = config.token;
-    _deviceNameController.text = config.deviceName;
+    _deviceNameController.text = "mi15";
     _virtualIPv4Controller.text = config.virtualIPv4;
     _serverAddressController.text = config.serverAddress;
     for (String stunServer in config.stunServers) {
