@@ -48,7 +48,7 @@ class _SettingsPageState extends State<SettingsPage> {
   // Future<bool> checkStartup() async {
   //   const String keyPath =
   //       r'HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Run';
-  //   const String appName = 'VNTApp'; // 应用的名字
+  //   const String appName = 'HXSDWAN'; // 应用的名字
 
   //   try {
   //     // 使用 'reg query' 命令查询注册表项
