@@ -1,6 +1,6 @@
-# VNT GUI
+# VPN GUI
 
-VNT GUI
+VPN GUI
 
 ## Build
 
