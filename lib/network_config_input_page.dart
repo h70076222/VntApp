@@ -90,7 +90,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
     _stunServers.add(TextEditingController(text: "stun.hitv.com"));
     _stunServers.add(TextEditingController(text: "stun.cdnbye.com"));
     _mtuController.text = "1410";
-    _serverAddressController.text = "vnt.wherewego.top:29872";
+    _serverAddressController.text = "nat1.wherewego.top:29872";
     _simulatedPacketLossRateController.text = "0";
     _simulatedLatencyController.text = "0";
   }
