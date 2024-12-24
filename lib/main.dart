@@ -38,7 +38,7 @@ Future<void> main() async {
     await windowManager.ensureInitialized();
 
     final windowSize = await DataPersistence().loadWindowSize();
-    windowManager.setTitle('VNT app');
+    windowManager.setTitle('HXSDWAN');
     if (windowSize != null) {
       await windowManager.setSize(windowSize);
     }
