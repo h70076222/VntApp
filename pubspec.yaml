@@ -1,4 +1,4 @@
-name: vnt_app
+name: hxsdwan
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.6
   device_info_plus: ^10.0.0
   shared_preferences: ^2.0.0 
-  rust_lib_vnt_app:
+  rust_lib_hxsdwan:
     path: rust_builder
   flutter_rust_bridge: 2.0.0-dev.37
   path_provider: ^2.1.3
