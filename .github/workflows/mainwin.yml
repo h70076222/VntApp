@@ -1,0 +1,47 @@
+name: vntapp-Windows
+
+on:
+   workflow_dispatch:
+    inputs:
+      repo:
+        description: '请输入vntAPP源码仓库'
+        required: true
+        default: 'vnt-dev/VntApp'
+      tag:
+        description: '请输入仓库分支或版本号'
+        required: true
+        default: 'master'
+
+env:
+  CARGO_TERM_COLOR: always
+  TZ: Asia/Shanghai
+  repo: "${{ github.event.inputs.repo }}"
+  tag: "${{ github.event.inputs.tag }}"
+
+jobs:
+  build:
+    runs-on: windows-latest # 使用 Windows 机器运行任务
+    steps:   
+      - name: 设置Flutter环境
+        uses: subosito/flutter-action@v2
+        with:
+          channel: stable  
+          
+      - name: 克隆源码
+        run: git clone -b "${{ env.tag }}" "https://github.com/${{ env.repo }}" C:\vnt
+
+      - name: 构建 Windows vntAPP
+        run: |
+          cd C:\vnt
+          flutter pub get
+          flutter upgrade
+          flutter build windows --release
+          echo "构建完成，开始列出生成的文件"
+          dir C:\vnt\build\windows\x64\runner\Release
+          
+      - name: 上传
+        uses: actions/upload-artifact@v3
+        if: always()
+        with:
+          name: vntAPP-Windows
+          path: C:\vnt\build\windows\x64\runner\Release\*
