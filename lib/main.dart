@@ -38,7 +38,7 @@ Future<void> main() async {
     await windowManager.ensureInitialized();
 
     final windowSize = await DataPersistence().loadWindowSize();
-    windowManager.setTitle('HXSDWAN');
+    windowManager.setTitle('VNT app');
     if (windowSize != null) {
       await windowManager.setSize(windowSize);
     }
@@ -75,8 +75,8 @@ Future<void> initSystemTray() async {
       Platform.isWindows ? 'assets/app_icon.ico' : 'assets/app_icon.png';
 
   await systemTray.initSystemTray(
-    title: "HXSDWAN",
-    toolTip: "HXSDWAN",
+    title: "VNT",
+    toolTip: "VNT",
     iconPath: path,
   );
   final Menu menu = Menu();
@@ -397,7 +397,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
             Navigator.of(context).pop();
           }
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('组网服务停止[$configName]')),
+            SnackBar(content: Text('VNT服务停止[$configName]')),
           );
         }
       } else if (msg is RustErrorInfo) {
@@ -636,7 +636,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Tooltip(
-                    message: '组网网络',
+                    message: 'VNT网络',
                     child: ColorChangingButton(
                       icon: Icons.attractions,
                       colors: const [Colors.white, Colors.yellow],
@@ -645,7 +645,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
           Padding(
               padding: const EdgeInsets.symmetric(horizontal: 8.0),
               child: Tooltip(
-                  message: '关于HXSDWAN',
+                  message: '关于VNT',
                   child: IconButton(
                     icon: const Icon(Icons.info, color: Colors.white),
                     onPressed: _navigateToAboutPage,
