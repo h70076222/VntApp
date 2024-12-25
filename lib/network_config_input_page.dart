@@ -90,7 +90,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
     _stunServers.add(TextEditingController(text: "stun.hitv.com"));
     _stunServers.add(TextEditingController(text: "stun.cdnbye.com"));
     _mtuController.text = "1410";
-    _serverAddressController.text = "nat1.wherewego.top:29872";
+    _serverAddressController.text = "vnt.wherewego.top:29872";
     _simulatedPacketLossRateController.text = "0";
     _simulatedLatencyController.text = "0";
   }
@@ -293,12 +293,12 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                 _buildSectionTitle('基本参数'),
                 CustomTooltipTextField(
                   controller: _groupNumberController,
-                  labelText: '组网识别码',
-                  tooltipMessage: '(识别同一个虚拟网络)',
+                  labelText: '组网编号',
+                  tooltipMessage: '(标识同一个虚拟网络)',
                   maxLength: 64,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return '请输入组网识别码';
+                      return '请输入组网编号';
                     }
                     return null;
                   },
