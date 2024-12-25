@@ -1,6 +1,6 @@
 # VNT GUI
 
-Vnt GUI
+VNT GUI
 
 ## Build
 
