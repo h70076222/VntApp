@@ -13,7 +13,7 @@ appenders:
         limit: 10 mb  # 每个日志文件最多10M
       roller:
         kind: fixed_window
-        pattern: logs/vnt-core.{}.log
+        pattern: logs/vpn-core.{}.log
         base: 1
         count: 5 # 循环记录5个日志文件
 
