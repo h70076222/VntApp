@@ -298,7 +298,7 @@ class _NetworkConfigInputPageState extends State<NetworkConfigInputPage> {
                   maxLength: 64,
                   validator: (value) {
                     if (value == null || value.isEmpty) {
-                      return '请输入组网编号';
+                      return '请输入组网识别码';
                     }
                     return null;
                   },
