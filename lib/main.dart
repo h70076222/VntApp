@@ -75,8 +75,8 @@ Future<void> initSystemTray() async {
       Platform.isWindows ? 'assets/app_icon.ico' : 'assets/app_icon.png';
 
   await systemTray.initSystemTray(
-    title: "VNT",
-    toolTip: "VNT",
+    title: "VPN",
+    toolTip: "VPN",
     iconPath: path,
   );
   final Menu menu = Menu();
@@ -397,7 +397,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
             Navigator.of(context).pop();
           }
           ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(content: Text('VNT服务停止[$configName]')),
+            SnackBar(content: Text('VPN服务停止[$configName]')),
           );
         }
       } else if (msg is RustErrorInfo) {
@@ -636,7 +636,7 @@ class _HomePageState extends State<HomePage> with WindowListener {
             Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 8.0),
                 child: Tooltip(
-                    message: 'VNT网络',
+                    message: 'VPN网络',
                     child: ColorChangingButton(
                       icon: Icons.attractions,
                       colors: const [Colors.white, Colors.yellow],
